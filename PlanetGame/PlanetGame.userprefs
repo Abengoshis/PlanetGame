@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CustomGizmos.cs">
+    <Files>
+      <File FileName="Assets\Scripts\OrbitBehaviour.cs" Line="11" Column="67" />
+      <File FileName="Assets\Scripts\Asteroid.cs" Line="27" Column="27" />
+      <File FileName="Assets\Shaders\TransparentBillboard.shader" Line="10" Column="86" />
+      <File FileName="Assets\Scripts\Atmosphere.cs" Line="15" Column="52" />
+      <File FileName="Assets\Scripts\CustomGizmos.cs" Line="16" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
