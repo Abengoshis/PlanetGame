@@ -41,10 +41,10 @@
 			v2f vert(a2v v)
 			{
 				fixed xScale = length(mul(_Object2World, fixed4(1, 0, 0, 0)));
-				fixed yScale = length(mul(_Object2World, fixed4(0, 1, 0, 0)	));
+				fixed yScale = length(mul(_Object2World, fixed4(0, 1, 0, 0)	));		
 			
     			v2f f;
-    			f.position = mul(UNITY_MATRIX_P, mul(UNITY_MATRIX_MV, float4(0, 0, 0, 1)) + float4(v.vertex.x * xScale, v.vertex.y * yScale, 0, 0));   
+    			f.position = mul(UNITY_MATRIX_P, mul(UNITY_MATRIX_MV, float4(0, 0, 0, 1)) + float4(v.vertex.x * xScale, v.vertex.y * yScale, 0, 0));
     			f.uv = v.texcoord;
     			return f;
 			}			
