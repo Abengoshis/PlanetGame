@@ -40,8 +40,11 @@ public class GravitySource : MonoBehaviour
 		foreach (GravitySource source in gravitySources)
 		{
 			Vector2 delta = (Vector2)source.transform.position - position;
-			float magnitude = GRAVITY_SCALE * mass * source.mass / delta.sqrMagnitude;
-			force += delta * magnitude;
+			if (delta.sqrMagnitude != 0)
+			{
+				float magnitude = GRAVITY_SCALE * mass * source.mass / delta.sqrMagnitude;
+				force += delta * magnitude;
+			}
 		}
 		return force;
 	}

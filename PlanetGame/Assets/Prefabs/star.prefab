@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2333130}
   - 58: {fileID: 5816848}
   - 114: {fileID: 11433118}
+  - 114: {fileID: 11421206}
   m_Layer: 0
   m_Name: star
   m_TagString: Untagged
@@ -73,7 +74,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fa5ad3090c4fa794fa46a0bb6827feea, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -151,6 +152,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .400000006
+--- !u!114 &11421206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0974eef9df275f4ea84fae3246f7a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 0, z: 1}
+  spin: 0
 --- !u!114 &11433118
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
 	[SerializeField]
 	private float resetDuration = 1f;
 
-	private Camera camera;
+	new private Camera camera;
 	private Vector3 startPosition;
 	private Vector3 desiredPosition;
 

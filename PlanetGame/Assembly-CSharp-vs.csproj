@@ -56,6 +56,10 @@
      <Compile Include="Assets\Scripts\Helper\Helper.cs" />
      <Compile Include="Assets\Scripts\Helper\Resurrectable.cs" />
      <Compile Include="Assets\Scripts\Helper\Spin.cs" />
+     <Compile Include="Assets\Scripts\Space\Appearance Generators\AppearanceGenerator.cs" />
+     <Compile Include="Assets\Scripts\Space\Appearance Generators\GasAppearanceGenerator.cs" />
+     <Compile Include="Assets\Scripts\Space\Appearance Generators\RockyAppearanceGenerator.cs" />
+     <Compile Include="Assets\Scripts\Space\Appearance Generators\StarAppearanceGenerator.cs" />
      <Compile Include="Assets\Scripts\Space\Atmosphere.cs" />
      <Compile Include="Assets\Scripts\Space\DebrisExplosion.cs" />
      <Compile Include="Assets\Scripts\Space\GravityReceiver.cs" />
@@ -64,6 +68,7 @@
      <Compile Include="Assets\Scripts\Space\WhiteHole.cs" />
      <None Include="Assets\Shaders\OrbitRing.shader" />
      <None Include="Assets\Shaders\TransparentBillboard.shader" />
+     <None Include="Assets\Shaders\Planet.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

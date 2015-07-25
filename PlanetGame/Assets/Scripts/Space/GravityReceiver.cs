@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Rigidbody2D))]
 public class GravityReceiver : MonoBehaviour
 {
-	private Rigidbody2D rigidbody2D;
+	new private Rigidbody2D rigidbody2D;
 	private Vector2 gravity;
 
 	void Awake()

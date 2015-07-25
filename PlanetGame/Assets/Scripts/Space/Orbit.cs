@@ -8,6 +8,7 @@ public class Orbit : MonoBehaviour
 {
 	private const int LINE_SEGMENTS = 32;
 
+	private readonly Color UNSELECTABLE_COLOR = new Color(1f, 0f, 0f, 0.1f);
 	private readonly Color UNSELECTED_COLOR = new Color(1f, 1f, 1f, 0.1f);
 	private readonly Color SELECTED_COLOR = new Color(1f, 1f, 1f, 0.8f);
 
@@ -105,8 +106,18 @@ public class Orbit : MonoBehaviour
 		InitializeOrbitValues();
 		
 		lineRenderer = GetComponent<LineRenderer>();
-		lineRenderer.SetColors(UNSELECTED_COLOR, UNSELECTED_COLOR);
-		lineRenderer.SetWidth(UNSELECTED_WIDTH, UNSELECTED_WIDTH);
+
+		if (interactable)
+		{
+			lineRenderer.SetColors(UNSELECTED_COLOR, UNSELECTED_COLOR);
+			lineRenderer.SetWidth(UNSELECTED_WIDTH, UNSELECTED_WIDTH);
+		}
+		else
+		{
+			lineRenderer.SetColors(UNSELECTABLE_COLOR, UNSELECTABLE_COLOR);
+			lineRenderer.SetWidth(UNSELECTED_WIDTH, UNSELECTED_WIDTH);
+		}
+
 		lineRenderer.SetVertexCount(LINE_SEGMENTS);
 
 		offsetAngle = Mathf.Atan2 (-majorAxis.y, majorAxis.x) * Mathf.Rad2Deg;	// todo: change this so it doesn't need to add the angle of the ellipse.
